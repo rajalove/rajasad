@@ -1,0 +1,46 @@
+<html>
+ <head>
+  <title>CSS ANIMATIONS</title>
+  <style>
+   div
+   {
+    margin:170px 350px;
+    background-color:yellow;
+    color:red;
+    width:90px;
+    height:90px;
+    border-top:7px solid blue;
+    border-bottom:7px solid blue;
+    border-right:14px solid red;
+    border-left:14px solid green;
+    border-radius:50%;
+
+    /*animation-name:rotate;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;*/
+
+    animation:rotate 1s linear 0s infinite alternate;
+
+   }
+   @keyframes rotate
+   {
+    0%
+    {
+        transform:perspective(200px) rotateZ(0deg); 
+    }
+    100%
+    {
+        transform:perspective(200px) rotateZ(360deg); 
+    }
+   }
+  </style>
+ </head>
+ <body>
+  <div>
+   
+  </div>
+ </body>
+</html>

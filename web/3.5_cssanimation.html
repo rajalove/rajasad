@@ -1,0 +1,83 @@
+<html>
+ <head>
+  <title>CSS ANIMATIONS</title>
+  <style>
+   div
+   {
+    background:linear-gradient(45deg,greenyellow,red,blue);
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    box-shadow:0 0 10px blue;
+    position:relative;
+
+    animation:zigzag 3s linear 0s infinite alternate;
+   }
+
+   @keyframes zigzag 
+   {
+    0%
+    {
+     top:0px;
+     left:0px;
+    }
+    10%
+    {
+     left:136px;
+     top:200px;
+    }
+    20%
+    {
+     left:272px;
+     top:0px;
+    }
+    30%
+    {
+     left:408px;
+     top:200px;
+    }
+    40%
+    {
+     left:544px;
+     top:100px;
+    }
+    50%
+    {
+     left:680px;
+     top:100px;
+    }
+    60%
+    {
+     left:816px;
+     top:200px;
+    }
+    70%
+    {
+     left:952px;
+     top:0px;
+    }
+    80%
+    {
+     left:1088px;
+     top:100px;
+    }
+    90%
+    {
+     left:1224px;
+     top:100px;
+    }
+    100%
+    {
+     left:1360px;
+     top:0px;
+    }
+
+   }
+  </style>
+ </head>
+ <body>
+  <div>
+   
+  </div>
+ </body>
+</html>
